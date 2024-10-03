@@ -1,3 +1,127 @@
 #wrapper-canvas canvas {
     max-width: 100%;
 }
+/* Button Styling */
+.about-me-btn {
+    display: inline-block;
+    background: linear-gradient(to left, #1595b6, rgba(31, 38, 103, 0.9));
+    border-radius: 5px;
+    padding: 0.6em 1.25em;
+    font-weight: 800;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .about-me-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About Me Modal */
+  .about-section {
+    width: 90%;
+    max-width: 1200px;
+    background: #191919; /* Solid background */
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+    padding: 2em;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .about-me-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* Close Button */
+  .x-icon {
+    background: #27292d;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  .x-icon:hover {
+    transform: rotate(90deg) scale(1.05);
+  }
+  
+  /* About Me Text Section */
+  .about-me-text {
+    width: 60%;
+    padding-right: 2em;
+  }
+  
+  .about-me-title {
+    color: #1788ae;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .about-me-detail {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .about-me-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+  }
+  
+  .about-me-text ul li {
+    border: 1px solid #444;
+    padding: 0.4em 0.8em;
+    border-radius: 50px;
+    font-size: 0.85em;
+  }
+  
+  /* Illustration / Image Section */
+  .illustration {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .coder-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1000px) {
+    .about-section {
+      flex-direction: column;
+      padding: 1.5em;
+    }
+  
+    .about-me-text {
+      width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  
+    
+  }
+  

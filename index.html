@@ -7,37 +7,14 @@
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
-    <!-- Link Swiper's CSS -->
+
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="icon"
+      href="./assets/images/name-logo-favicon.svg"
+      type="image/x-icon"
+      sizes="16x16"
     />
-    <link rel="icon" href="./assets/images/name-logo-favicon.svg" type="image/x-icon" />
 
-    <!-- Demo styles -->
-    <style>
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-button-next,
-      .swiper-button-prev {
-        color: #1788ae;
-      }
-
-      .swiper-pagination-bullet {
-        background-color: #23b9eb;
-      }
-    </style>
     <script src="./matter.js" defer></script>
   </head>
   <body class="bg-[#111] text-white font-['Nunito']">
@@ -182,6 +159,7 @@
               MERN Stack Developer
             </p>
             <button
+              id="about-me-btn"
               class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
             >
               About Me
@@ -226,6 +204,52 @@
                 </g>
               </svg>
             </button>
+
+            <!-- About Me Popup Modal -->
+            <div id="about-me-modal" class="about-modal hidden">
+              <div class="about-section">
+                <!-- Close button -->
+                <button id="close-modal" class="x-icon">
+                  <!-- X-icon SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            
+                <!-- Left section: About Me Text -->
+                <div class="about-me-text">
+                  <h2 class="about-me-title">About Me</h2>
+                  <p class="about-me-detail">
+                    I help business owners and busy web developers design & develop creative websites that fit their vision and attract visitors...
+                  </p>
+                  <ul>
+                    <li>#javascript</li>
+                <li>#react.js</li>
+                <li>#redux</li>
+                <li>#node.js</li>
+                <li>#express.js</li>
+                <li>#mongoDB</li>
+                <li>#mongoose</li>
+                <li>#cloudinary</li>
+                <li>#ejs</li>
+                <li>#html</li>
+                <li>#css</li>
+                <li>#sass</li>
+                <li>#bootstrap</li>
+                <li>#tailwind</li>
+                <li>#git</li>
+                <li>#github</li>
+                <li>#aws</li>
+                <li>#terminal</li>
+                <li>#adobeXD</li>
+                <li>#figma</li>
+                  </ul>
+                </div>
+            
+                <!-- Right section: Image -->
+                <div class="illustration">
+                  <img src="./assets/images/ashish.jpeg" alt="Your Image" class="coder-img">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -262,7 +286,10 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/.ashxhh/?igsh=MWtxcWFkcDF5Y3NrbA%3D%3D" target="_blank">
+            <a
+              href="https://www.instagram.com/.ashxhh/?igsh=MWtxcWFkcDF5Y3NrbA%3D%3D"
+              target="_blank"
+            >
               <svg
                 class="w-7 hover:text-white"
                 xmlns="http://www.w3.org/2000/svg"
@@ -309,6 +336,7 @@
         class="relative self-center after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[#444] after:left-1/2 after:-translate-x-1/2 after:top-[100px]"
       >
         <button
+          id="btn"
           class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group mb-20"
         >
           Latest Works
@@ -411,9 +439,9 @@
           <h3 class="text-[#459bd5] font-bold text-2xl md:text-4xl">
             Quickhirepro
           </h3>
-          <span class="text-[#459bd5] text-base md:text-lg"
-            >(Job Search Platform)</span
-          >
+          <span class="text-[#459bd5] text-base md:text-lg">
+            (Job Search Platform)
+          </span>
           <p class="text-justify text-sm md:text-base mt-2">
             A full-stack job platform showcases the latest job listings,
             allowing students to easily browse and apply. With a user-friendly
@@ -460,8 +488,6 @@
           </ul>
         </div>
       </div>
-
-      
 
       <div
         class="flex flex-col sm:flex-row gap-4 mt-12 sm:gap-[80px] items-center sm:mt-20 relative"
@@ -617,8 +643,8 @@
             </li>
 
             <li
-              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base">
-            
+              class="border rounded-[50px] border-[#999] px-[10px] py-[5px] text-sm md:text-base"
+            >
               #three.js
             </li>
             <li
@@ -629,7 +655,6 @@
           </ul>
         </div>
       </div>
-      
 
       <div
         class="w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"
@@ -798,7 +823,7 @@
             </svg>
           </a>
         </li>
-        
+
         <li>
           <a href="mailto:anuragsinghbam@gmail.com" target="_blank">
             <svg
@@ -834,17 +859,35 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+      document.getElementById("btn").addEventListener("click", function () {
+        window.scrollTo({
+          top: 725, // Specify the vertical position (height in pixels)
+          behavior: "smooth", // Smooth scrolling animation
+        });
       });
+      <!-- ABout me Popup -->
+      // Get the elements
+      const aboutMeBtn = document.getElementById('about-me-btn');
+  const modal = document.getElementById('about-me-modal');
+  const closeModalBtn = document.getElementById('close-modal');
+
+aboutMeBtn.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.add('hidden');
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target == modal) {
+    modal.classList.add('hidden');
+  }
+});
+      
+
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
